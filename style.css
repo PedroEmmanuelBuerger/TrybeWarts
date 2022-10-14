@@ -5,13 +5,6 @@
   background-color: rgb(50, 167, 145);
 }
 
-legend {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: rgb(50, 167, 145);
-  height: 0;
-}
-
 body {
   font-family: serif;
   box-sizing: border-box;
@@ -55,6 +48,8 @@ main form {
   width: 675px;
   border: 1px solid rgb(50, 167, 145);
   border-radius: 5px;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 /* Pedro E. Requesito 6 */
@@ -81,6 +76,7 @@ main form {
   display: flex;
   flex-direction: column;
 }
+
 /* Ramon G B S Requisito 13 */
 .div-label {
   margin-top: 20px;
@@ -97,9 +93,9 @@ main form {
 }
 
 #evaluation-container {
-  flex-wrap: nowrap;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 #evaluation label {
@@ -115,4 +111,8 @@ main form {
   flex-direction: column;
   margin-top: 20px;
   padding: 2%;
+}
+
+#agreement {
+  margin-left: 10px;
 }
