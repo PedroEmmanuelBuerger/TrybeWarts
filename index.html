@@ -51,6 +51,7 @@
         </form>
       </section>
     </header>
+    <!-- Parte do form para coloca nome, sobrenome, email e casa -->
     <!-- Ramon G. B. S. requisito 5 e 8-->
     <main>
       <form id="evaluation-form" class="form" action="">
@@ -93,6 +94,7 @@
               />
             </div>
 
+            <!-- Parte do forms para escolher a casa -->
             <!-- Pedro E. requesito 9 -->
             <div class="houses-container container">
               <label for="">Casa:</label>
@@ -110,6 +112,7 @@
           </div>
         </fieldset>
 
+        <!-- Parte do forms para escolher a família -->
         <!-- Pedro E. Requesito 12 -->
         <fieldset class="container form-2">
           <section>
@@ -212,9 +215,10 @@
             />
             <label for="" class="form-check-label">Python</label>
           </div>
-
-          <!-- Pedro E. requesito 14 -->
         </fieldset>
+
+        <!-- Campo de radio para as opções de nota -->
+        <!-- Pedro E. requesito 14 -->
         <fieldset id="evaluation-container">
           <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
           <div id="evaluation">
@@ -241,9 +245,10 @@
           </div>
         </fieldset>
 
+        <!-- Área de texto para sugestões e comentários -->
         <!-- Ramon G B S requisito 15 -->
         <fieldset class="form-4 container">
-          <label for="" class="textarea">Deixe seu comentário:</label>
+          <label for="" class="textarea form-label">Deixe seu comentário:</label>
 
           <textarea
             name="textarea"
@@ -251,19 +256,22 @@
             rows="10"
             class="form-control-sm border border-dark"
             maxlength="500"
+            id="textarea"
           ></textarea>
+          <span id="counter">500</span>
         </fieldset>
 
+        <!-- Campo de aceite -->
         <!-- Pedro E. Requesito 16 -->
         <fieldset id="" class="container">
           <label for="" id="label-infos"
-            >Você concorda com o uso das informações acima?</label
-          >
+            >Você concorda com o uso das informações acima?</label>
           <input type="checkbox" id="agreement" class="form-check-input" />
         </fieldset>
         <button type="submit" id="submit-btn" class="btn btn-success w-50 mt-3">Enviar</button>
       </form>
 
+      <!-- Logo trybewarts do lado direito do forms -->
       <!-- /* Pedro E. Requesito 7 */ -->
       <section>
         <img
@@ -274,6 +282,9 @@
       </section>
     </main>
   </body>
+
+  <!-- Footer -->
+  <!-- Ramon G B S Requisito 19 -->
   <footer>
     <p>Direitos reservados à Trybewarts©</p>
   </footer>

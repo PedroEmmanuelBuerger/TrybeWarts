@@ -112,6 +112,7 @@ main form {
   flex-direction: column;
   margin-top: 20px;
   padding: 2%;
+  position: relative;
 }
 
 #agreement {
@@ -131,4 +132,10 @@ footer {
 footer p {
   padding: 10px;
   margin-bottom: 0;
+}
+
+#caracteres {
+  position: absolute;
+  left: 585px;
+  top: 230px;
 }

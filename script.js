@@ -31,3 +31,14 @@ function verifyCheck() {
 }
 
 checkbox.addEventListener('click', verifyCheck);
+
+// --------------------------------------------------
+
+// pedro E. Requesito 21 - bonus
+const spanCounter = document.getElementById('counter');
+const textarea = document.getElementById('textarea');
+textarea.addEventListener('input', () => {
+  const counter = 500 - textarea.value.length;
+  spanCounter.innerText = counter;
+  console.log(spanCounter.innerText);
+});
