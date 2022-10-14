@@ -14,3 +14,5 @@ const verifyTryber = () => {
 buttonEnter.addEventListener('click', verifyTryber);
 
 // --------------------------------------------------
+
+const buttonCheck = document.getElementById('submit-btn');
