@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap");
 
 .header {
   display: flex;
@@ -10,7 +10,7 @@
 body {
   background-repeat: no-repeat;
   background-size: 100vh;
-  font-family: 'Inknut Antiqua', serif;
+  font-family: "Inknut Antiqua", serif;
 }
 
 .trybewarts-login {
@@ -42,3 +42,9 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.form-group {
+  margin: 10px;
+}
+
+.trybewarts-lo
