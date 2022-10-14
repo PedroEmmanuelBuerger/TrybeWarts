@@ -26,10 +26,15 @@ h1 {
 }
 
 main {
-    display: flex;
+  display: flex;
 }
 
 .form {
-    display: flex;
-    width: 675px;
+  display: flex;
+  width: 675px;
+}
+
+/* Pedro E. Requesito 6 */
+#evaluation-form {
+  flex-direction: column;
 }
