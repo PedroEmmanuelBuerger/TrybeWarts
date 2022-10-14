@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="./script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Trybewarts</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Ramon G. B. S. requisito 1 -->
     <header class="header">
-        <!-- Pedro E.  requisito 2-->
-     <img src="images/trybewarts-header-logo.svg" alt="trybeWarts" class="trybewarts-header-logo">   
+      <!-- Pedro E.  requisito 2-->
+      <section>
+        <img
+          src="images/trybewarts-header-logo.svg"
+          alt="trybeWarts"
+          class="trybewarts-header-logo"
+        />
+      </section>
+
+      <!-- Pedro E. Requesito 4 -->
+      <h1 id="trybewarts-header-title" class="display-6 container">Trybewarts</h1>
+      
+      <!-- Ramon G. B. S. requisito 3 -->
+      <section class="container login">
+        <form class="trybewarts-login" action="">
+              <input type="email" name="email" id="email" placeholder="Email" class="form-control-sm"/>
+            </label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Senha"
+                class="form-control-sm"
+              />
+            </label>
+            <button class="btn button btn-info">Entrar</button>
+        </form>
+
+      </section>
+
     </header>
-</body>
+
+  </body>
 </html>

@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap");
+
 .header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: rgb(50, 167, 145);
 }
 
@@ -7,4 +11,16 @@ body {
   background-image: url("./images/background.png");
   background-repeat: no-repeat;
   background-size: 100vh;
+  font-family: "Inknut Antiqua", serif;
+}
+
+.trybewarts-login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+h1 {
+  color: rgb(241, 241, 241);
 }
