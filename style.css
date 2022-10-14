@@ -117,3 +117,18 @@ main form {
 #agreement {
   margin-left: 10px;
 }
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 0;
+  background-color: rgb(50, 167, 145);
+  height: 50px;
+}
+
+footer p {
+  padding: 10px;
+  margin-bottom: 0;
+}
