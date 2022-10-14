@@ -8,7 +8,7 @@ const verifyTryber = () => {
   if (email === 'tryber@teste.com' && password === '123456') {
     alert('Olá, Tryber!');
   }
-  alert('Login ou senha inválidos.');
+  alert('Email ou senha inválidos.');
 };
 
 buttonEnter.addEventListener('click', verifyTryber);
