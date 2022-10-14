@@ -64,7 +64,7 @@
               name="name"
               id="input-name"
               placeholder="Nome"
-              class="form-control-sm"
+              class="form-control-sm border border-dark"
               required
             />
             <label for="input-email">Email:</label>
@@ -73,7 +73,7 @@
               name="email"
               id="input-email"
               placeholder="Email"
-              class="form-control-sm"
+              class="form-control-sm border border-dark"
               required
             />
           </div>
@@ -84,12 +84,13 @@
               name="lastname"
               id="input-lastname"
               placeholder="Sobrenome"
-              class="form-control-sm"
+              class="form-control-sm border border-dark"
               required
             />
 
             <!-- Pedro E. requesito 9 -->
-            <select name="house" id="house">
+            <label for="">Casa:</label>
+            <select name="house" id="house" class='form-select border border-dark mb-3'>
               <option value="Gitnória" id="gitnoria-house">Gitnória</option>
               <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
               <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -100,21 +101,110 @@
 
         <!-- Pedro E. Requesito 12 -->
         <fieldset class="container form-2">
-            <section>
-                <label for="" id="label-family">Qual sua família?</label>
-                <div>
-                    <input type="radio" name="family" value="Frontend" class="form-check-input">
-                    <label for="" class="form-check-label">FrontEnd</label>
-                </div>
-                <div>
-                    <input type="radio" name="family" value="Backend" class="form-check-input">
-                    <label for="" class="form-check-label">Backend</label>   
-                </div>
-                <div>
-                    <input type="radio" name="family" value="FullStack" class="form-check-input">
-                    <label for="" class="form-check-label">FullStack</label>
-                </div>
-              </section>
+          <section>
+            <label for="" id="label-family">Qual sua família?</label>
+            <div>
+              <input
+                type="radio"
+                name="family"
+                value="Frontend"
+                class="form-check-input"
+              />
+              <label for="" class="form-check-label">FrontEnd</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="family"
+                value="Backend"
+                class="form-check-input"
+              />
+              <label for="" class="form-check-label">Backend</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="family"
+                value="FullStack"
+                class="form-check-input"
+              />
+              <label for="" class="form-check-label">FullStack</label>
+            </div>
+          </section>
+        </fieldset>
+        
+        <!-- Forms contendo checkboxs -->
+        <!-- Ramon G B S Requisito 13 -->
+        <div class="div-label">
+          <label for="" id="label-content" class="form-check-label"
+            >"Qual conteúdo você está com mais vontade de aprender?"</label
+          >
+        </div>
+        <fieldset class="container form-3">
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              value="HoFs"
+              id=""
+              class="subject form-check-input"
+            />
+            <label for="" class="form-check-label">HoFs</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              value="Jest"
+              id=""
+              class="subject form-check-input"
+            />
+            <label for="" class="form-check-label">Jest</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              value="Promises"
+              id=""
+              class="subject form-check-input"
+            />
+            <label for="" class="form-check-label">Promises</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              value="React"
+              id=""
+              class="subject form-check-input"
+            />
+            <label for="" class="form-check-label">React</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              value="SQL"
+              id=""
+              class="subject form-check-input"
+            />
+            <label for="" class="form-check-label">SQL</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              value="Python"
+              id=""
+              class="subject form-check-input"
+            />
+            <label for="" class="form-check-label">Python</label>
+          </div>
+        </fieldset>
+        <label for="">Como você avalia a Trybewarts?</label>
+        <fieldset>
+        
         </fieldset>
       </form>
 

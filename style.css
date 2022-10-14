@@ -63,3 +63,16 @@ main {
     flex-direction: column;
     width: 675px;
 }
+/* Ramon G B S Requisito 13 */
+.div-label{
+    margin-top: 20px;
+}
+.form-3 {
+    margin-top: 10px;
+    display: flex;
+}
+
+.form-3 div label{
+    margin-left: 5px;
+    margin-right: 5px;
+}
