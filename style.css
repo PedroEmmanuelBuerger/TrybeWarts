@@ -57,3 +57,9 @@ main {
   width: 100px;
   padding: 5px;
 }
+
+.form-2 {
+    display: flex;
+    flex-direction: column;
+    width: 675px;
+}
