@@ -5,18 +5,23 @@
   background-color: rgb(50, 167, 145);
 }
 
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(50, 167, 145);
+  height: 0;
+}
+
 body {
-  background-repeat: no-repeat;
-  background-size: 100vh;
   font-family: serif;
+  box-sizing: border-box;
+  margin: 1%;
 }
 
 fieldset {
   display: flex;
-  border: 3px solid rgb(50, 167, 145);
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
+  width: 50%;
+  margin-left: 22%;
 }
 
 .trybewarts-login {
@@ -32,11 +37,24 @@ h1 {
 
 main {
   display: flex;
+  justify-content: space-around;
+}
+
+.houses-container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+main form {
+  background-color: rgb(241, 227, 227);
 }
 
 .form {
   display: flex;
   width: 675px;
+  border: 1px solid rgb(50, 167, 145);
+  border-radius: 5px;
 }
 
 /* Pedro E. Requesito 6 */
@@ -54,6 +72,7 @@ main {
 }
 
 .trybewarts-header-logo {
+  display: flex;
   width: 100px;
   padding: 5px;
 }
@@ -61,7 +80,6 @@ main {
 .form-2 {
   display: flex;
   flex-direction: column;
-  width: 675px;
 }
 /* Ramon G B S Requisito 13 */
 .div-label {
@@ -70,6 +88,7 @@ main {
 .form-3 {
   margin-top: 10px;
   display: flex;
+  padding-left: 2%;
 }
 
 .form-3 div label {
@@ -77,14 +96,23 @@ main {
   margin-right: 5px;
 }
 
-#evaluation {
+#evaluation-container {
+  flex-wrap: nowrap;
   display: flex;
+  flex-direction: column;
 }
 
 #evaluation label {
-  margin: 5px 5px;
+  margin-left: 3px;
 }
 
 #label-rate {
   margin-top: 20px;
+}
+
+.form-4 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 2%;
 }
