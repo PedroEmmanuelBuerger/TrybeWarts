@@ -1,14 +1,30 @@
-.header {
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inknut+Antiqua:wght@300&display=swap");
+
+header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   background-color: rgb(50, 167, 145);
+  padding: 20px;
+  height: 100px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff !important;
+  text-transform: uppercase;
+  font-family: "Inknut Antiqua", serif;
 }
 
 body {
-  font-family: serif;
   box-sizing: border-box;
   margin: 1%;
+  background-image: url("./images/background3.png");
+  background-size: cover;
+  height: 100vh;
+  opacity: 0.9;
+  background-position: center;
 }
 
 fieldset {
@@ -17,110 +33,44 @@ fieldset {
   margin-left: 22%;
 }
 
-.trybewarts-login {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
-}
-
 h1 {
-  color: rgb(241, 241, 241);
+  color: rgb(50, 167, 145);
 }
 
 main {
   display: flex;
   justify-content: space-around;
-}
-
-.houses-container {
-  display: flex;
-  padding: 0;
-  margin: 0;
+  align-items: center;
 }
 
 main form {
-  background-color: rgb(241, 227, 227);
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.146);
+  font-size: 18px;
+  font-family: "Inknut Antiqua", serif;
 }
 
-.form {
-  display: flex;
-  width: 675px;
-  border: 1px solid rgb(50, 167, 145);
-  border-radius: 5px;
-  margin-top: 20px;
-  padding: 20px;
+input,
+textarea {
+  background: rgba(0, 0, 0, 0.3) !important;
+  color: white !important;
+  font-size: 14px !important;
+  border-color: rgba(224, 221, 221) !important;
 }
 
-/* Pedro E. Requesito 6 */
-#evaluation-form {
-  flex-direction: column;
-}
-
-/* Pedro E. Requesito 7 */
-#trybewarts-forms-logo {
-  height: 500px;
-}
-
-.form-group {
-  margin: 10px;
-}
-
-.trybewarts-header-logo {
-  display: flex;
-  width: 100px;
-  padding: 5px;
-}
-
-.form-2 {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Ramon G B S Requisito 13 */
-.div-label {
-  margin-top: 20px;
-}
-
-.form-3 {
-  margin-top: 10px;
-  display: flex;
-  padding-left: 2%;
-}
-
-.form-3 div label {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-#evaluation-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-#evaluation label {
-  margin-left: 3px;
-}
-
-#label-rate {
-  margin-top: 20px;
-}
-
-.form-4 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  padding: 2%;
-  position: relative;
-}
-
-#agreement {
-  margin-left: 10px;
+select {
+  background: rgba(0, 0, 0, 0.3) !important;
+  color: white !important;
+  font-size: 18px !important;
 }
 
 footer {
   position: fixed;
+  color: white;
   width: 100%;
   bottom: 0;
   text-align: center;
@@ -134,12 +84,177 @@ footer p {
   margin-bottom: 0;
 }
 
-#caracteres {
-  position: absolute;
-  left: 585px;
-  top: 230px;
+button {
+  background-color: white !important;
+  color: black !important;
 }
 
-#footer {
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 10%;
+}
+
+.form-check-input:checked {
+  background-color: #a73dce !important;
+  border: #a73dc6 !important;
+}
+
+.form {
+  display: flex;
   color: white;
+  flex-direction: column;
+  width: 675px;
+  border-radius: 5px;
+  margin: 50px 40px;
+  padding: 20px;
+}
+
+.form-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.form-1 div {
+  margin: 5px;
+}
+
+.form-1 div input {
+  width: 100%;
+}
+
+.houses-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.trybewarts-header-logo {
+  display: flex;
+  width: 100px;
+  padding: 5px;
+}
+
+.form-2 {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.form-2 div {
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+/* Ramon G B S Requisito 13 */
+.div-label {
+  margin-top: 20px;
+}
+
+.form-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 675px;
+  padding: 10px;
+}
+
+.form-3 div {
+  padding-left: 10px;
+}
+
+.form-3 div label {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.form-4 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 2%;
+  position: relative;
+}
+
+#form-data {
+  color: white;
+  font-size: 25px;
+  font-family: "Inknut Antiqua", serif;
+  text-align: center;
+  margin-top: 10%;
+}
+
+#input-name {
+  margin-bottom: 10px;
+}
+
+#evaluation-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#evaluation {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 10px;
+}
+
+#evaluation label {
+  margin-left: 3px;
+  margin-right: 5px;
+}
+
+#label-rate {
+  margin-top: 20px;
+}
+
+#agreement {
+  margin-left: 10px;
+}
+
+#counter {
+  position: absolute;
+  left: 580px;
+  top: 235px;
+}
+
+/* Pedro E. Requesito 6 */
+#evaluation-form {
+  flex-direction: column;
+}
+
+/* Pedro E. Requesito 7 */
+#trybewarts-forms-logo {
+  height: 500px;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+
+/* Referência: https://stackoverflow.com/questions/27123399/how-to-move-an-image-up-and-down-smoothly-with-css */
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }

@@ -12,6 +12,12 @@
     />
     <script src="./script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inknut+Antiqua:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Trybewarts</title>
   </head>
@@ -28,10 +34,10 @@
       </section>
 
       <!-- Pedro E. Requesito 4 -->
-      <h1 id="trybewarts-header-title" class="display-6 container">Trybewarts</h1>
+      <h1 id="trybewarts-header-title" class="display-2">Trybewarts</h1>
 
       <!-- Ramon G. B. S. requisito 3 -->
-      <section class="container login">
+      <section class="login">
         <form class="trybewarts-login" action="">
           <input
             type="email"
@@ -47,7 +53,7 @@
             placeholder="Senha"
             class="form-control-sm"
           />
-          <button class="btn button btn-info">Entrar</button>
+          <button class="button btn">Entrar</button>
         </form>
       </section>
     </header>
@@ -58,7 +64,7 @@
         <fieldset class="container form-1">
           <!-- <legend>Dados Pessoais:</legend> -->
 
-          <div class="form-group">
+          <div id="name-div" class="form-group">
             <label for="input-name">Nome:</label>
             <input
               type="text"
@@ -68,53 +74,46 @@
               class="form-control-sm border border-dark"
               required
             />
-            <div>
-              <label for="input-email">Email:</label>
-              <input
-                type="email"
-                name="email"
-                id="input-email"
-                placeholder="Email"
-                class="form-control-sm border border-dark"
-                required
-              />
-            </div>
+            <label for="input-email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="input-email"
+              placeholder="Email"
+              class="form-control-sm border border-dark"
+              required
+            />
           </div>
 
           <div class="form-group">
-            <div>
-              <label for="input-lastname">Sobrenome:</label>
-              <input
-                type="text"
-                name="lastname"
-                id="input-lastname"
-                placeholder="Sobrenome"
-                class="form-control-sm border border-dark"
-                required
-              />
-            </div>
-
+            <label for="input-lastname">Sobrenome:</label>
+            <input
+              type="text"
+              name="lastname"
+              id="input-lastname"
+              placeholder="Sobrenome"
+              class="form-control border border-dark"
+              required
+            />
             <!-- Parte do forms para escolher a casa -->
             <!-- Pedro E. requesito 9 -->
-            <div class="houses-container container">
-              <label for="">Casa:</label>
-              <select
-                name="house"
-                id="house"
-                class="form-select form-select-sm w-50 ms-5 border border-dark"
-              >
-                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                <option value="Pytherina" id="pytherina-house">Pytherina</option>
-              </select>
-            </div>
+            <label for="">Casa:</label>
+            <select
+              name="house"
+              id="house"
+              class="form-select form-select-sm w-100"
+            >
+              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+              <option value="Corvinode" id="corvinode-house">Corvinode</option>
+              <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            </select>
           </div>
         </fieldset>
 
         <!-- Parte do forms para escolher a família -->
         <!-- Pedro E. Requesito 12 -->
-        <fieldset class="container form-2">
+        <fieldset class="form-2 container">
           <section>
             <label for="" id="label-family">Qual sua família?</label>
             <div>
@@ -122,7 +121,7 @@
                 type="radio"
                 name="family"
                 value="Frontend"
-                class="form-check-input family"
+                class="form-check-input family border border-white"
               />
               <label for="" class="form-check-label">FrontEnd</label>
             </div>
@@ -131,7 +130,7 @@
                 type="radio"
                 name="family"
                 value="Backend"
-                class="form-check-input family"
+                class="form-check-input family border border-white"
               />
               <label for="" class="form-check-label">Backend</label>
             </div>
@@ -140,7 +139,7 @@
                 type="radio"
                 name="family"
                 value="FullStack"
-                class="form-check-input family"
+                class="form-check-input family border border-white"
               />
               <label for="" class="form-check-label">FullStack</label>
             </div>
@@ -149,6 +148,7 @@
 
         <!-- Forms contendo checkboxs -->
         <!-- Ramon G B S Requisito 13 -->
+
         <div class="div-label">
           <label for="" id="label-content" class="form-check-label"
             >"Qual conteúdo você está com mais vontade de aprender?"</label
@@ -222,25 +222,76 @@
         <fieldset id="evaluation-container">
           <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
           <div id="evaluation">
-            <input id = "rate" type="radio" value="1" name="rate" />
+            <input
+              id="rate"
+              type="radio"
+              value="1"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
             <label for="" class="form-check-label">1</label>
-            <input type="radio" value="2" name="rate" class="rate" />
+            <input
+              type="radio"
+              value="2"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
             <label for="" class="form-check-label">2</label>
-            <input type="radio" value="3" name="rate" class="rate" />
+            <input
+              type="radio"
+              value="3"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
             <label for="" class="form-check-label">3</label>
-            <input type="radio" value="4" name="rate" class="rate" />
+            <input
+              type="radio"
+              value="4"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
             <label for="" class="form-check-label">4</label>
-            <input type="radio" value="5" name="rate" class="rate"/>
+            <input
+              type="radio"
+              value="5"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
             <label for="" class="form-check-label">5</label>
-            <input type="radio" value="6" name="rate" />
+            <input
+              type="radio"
+              value="6"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
             <label for="" class="form-check-label">6</label>
-            <input type="radio" value="7" name="rate" class="rate"/>
+            <input
+              type="radio"
+              value="7"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
             <label for="" class="form-check-label">7</label>
-            <input type="radio" value="8" name="rate" class="rate"/>
+            <input
+              type="radio"
+              value="8"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
             <label for="" class="form-check-label">8</label>
-            <input type="radio" value="9" name="rate" class="rate"/>
+            <input
+              type="radio"
+              value="9"
+              name="rate"
+              class="rate form-check-input border border-white"
+            />
             <label for="" class="form-check-label">9</label>
-            <input type="radio" value="10" name="rate" class="rate"/>
+            <input
+              type="radio"
+              value="10"
+              name="rate"
+              class="rate rate form-check-input border border-white"
+            />
             <label for="" class="form-check-label">10</label>
           </div>
         </fieldset>
@@ -248,7 +299,9 @@
         <!-- Área de texto para sugestões e comentários -->
         <!-- Ramon G B S requisito 15 -->
         <fieldset class="form-4 container">
-          <label for="" class="textarea form-label">Deixe seu comentário:</label>
+          <label for="" class="textarea form-label"
+            >Deixe seu comentário:</label
+          >
 
           <textarea
             name="textarea"
@@ -265,10 +318,15 @@
         <!-- Pedro E. Requesito 16 -->
         <fieldset id="" class="container">
           <label for="" id="label-infos"
-            >Você concorda com o uso das informações acima?</label>
-          <input type="checkbox" id="agreement" class="form-check-input" />
+            >Você concorda com o uso das informações acima?</label
+          >
+          <input
+            type="checkbox"
+            id="agreement"
+            class="form-check-input border border-white"
+          />
         </fieldset>
-        <button type="submit" id="submit-btn" class="btn btn-success w-50 mt-3">Enviar</button>
+        <button type="submit" id="submit-btn" class="btn w-100 mt-3">Enviar</button>
       </form>
       <!-- Logo trybewarts do lado direito do forms -->
       <!-- /* Pedro E. Requesito 7 */ -->
