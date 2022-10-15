@@ -122,7 +122,7 @@
                 type="radio"
                 name="family"
                 value="Frontend"
-                class="form-check-input"
+                class="form-check-input family"
               />
               <label for="" class="form-check-label">FrontEnd</label>
             </div>
@@ -131,7 +131,7 @@
                 type="radio"
                 name="family"
                 value="Backend"
-                class="form-check-input"
+                class="form-check-input family"
               />
               <label for="" class="form-check-label">Backend</label>
             </div>
@@ -140,7 +140,7 @@
                 type="radio"
                 name="family"
                 value="FullStack"
-                class="form-check-input"
+                class="form-check-input family"
               />
               <label for="" class="form-check-label">FullStack</label>
             </div>
@@ -222,25 +222,25 @@
         <fieldset id="evaluation-container">
           <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
           <div id="evaluation">
-            <input type="radio" value="1" name="rate" />
+            <input id = "rate" type="radio" value="1" name="rate" />
             <label for="" class="form-check-label">1</label>
-            <input type="radio" value="2" name="rate" />
+            <input type="radio" value="2" name="rate" class="rate" />
             <label for="" class="form-check-label">2</label>
-            <input type="radio" value="3" name="rate" />
+            <input type="radio" value="3" name="rate" class="rate" />
             <label for="" class="form-check-label">3</label>
-            <input type="radio" value="4" name="rate" />
+            <input type="radio" value="4" name="rate" class="rate" />
             <label for="" class="form-check-label">4</label>
-            <input type="radio" value="5" name="rate" />
+            <input type="radio" value="5" name="rate" class="rate"/>
             <label for="" class="form-check-label">5</label>
             <input type="radio" value="6" name="rate" />
             <label for="" class="form-check-label">6</label>
-            <input type="radio" value="7" name="rate" />
+            <input type="radio" value="7" name="rate" class="rate"/>
             <label for="" class="form-check-label">7</label>
-            <input type="radio" value="8" name="rate" />
+            <input type="radio" value="8" name="rate" class="rate"/>
             <label for="" class="form-check-label">8</label>
-            <input type="radio" value="9" name="rate" />
+            <input type="radio" value="9" name="rate" class="rate"/>
             <label for="" class="form-check-label">9</label>
-            <input type="radio" value="10" name="rate" />
+            <input type="radio" value="10" name="rate" class="rate"/>
             <label for="" class="form-check-label">10</label>
           </div>
         </fieldset>
@@ -270,7 +270,6 @@
         </fieldset>
         <button type="submit" id="submit-btn" class="btn btn-success w-50 mt-3">Enviar</button>
       </form>
-
       <!-- Logo trybewarts do lado direito do forms -->
       <!-- /* Pedro E. Requesito 7 */ -->
       <section>
@@ -286,6 +285,6 @@
   <!-- Footer -->
   <!-- Ramon G B S Requisito 19 -->
   <footer>
-    <p>Direitos reservados à Trybewarts©</p>
+    <p id="footer">Direitos reservados à Trybewarts©</p>
   </footer>
 </html>
