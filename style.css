@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inknut+Antiqua:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inknut+Antiqua:wght@300&display=swap');
 
 header {
   display: flex;
@@ -12,15 +12,15 @@ header {
 h1 {
   font-size: 2em;
   font-weight: 700;
-  color: #fff !important;
+  color: white;
   text-transform: uppercase;
-  font-family: "Inknut Antiqua", serif;
+  font-family: Inknut Antiqua, serif;
 }
 
 body {
   box-sizing: border-box;
   margin: 1%;
-  background-image: url("./images/background3.png");
+  background-image: url('./images/background3.png');
   background-size: cover;
   height: 100vh;
   opacity: 0.9;
@@ -33,10 +33,6 @@ fieldset {
   margin-left: 22%;
 }
 
-h1 {
-  color: rgb(50, 167, 145);
-}
-
 main {
   display: flex;
   justify-content: space-around;
@@ -47,25 +43,23 @@ main form {
   background: rgba(0, 0, 0, 0.3);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.146);
   font-size: 18px;
-  font-family: "Inknut Antiqua", serif;
+  font-family: Inknut Antiqua, serif;
 }
 
-input,
-textarea {
-  background: rgba(0, 0, 0, 0.3) !important;
-  color: white !important;
-  font-size: 14px !important;
-  border-color: rgba(224, 221, 221) !important;
+input , textarea {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 14px;
+  border-color: rgba(224, 221, 221);
 }
 
 select {
-  background: rgba(0, 0, 0, 0.3) !important;
-  color: white !important;
-  font-size: 18px !important;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 18px;
 }
 
 footer {
@@ -84,11 +78,6 @@ footer p {
   margin-bottom: 0;
 }
 
-button {
-  background-color: white !important;
-  color: black !important;
-}
-
 .trybewarts-login {
   display: flex;
   align-items: center;
@@ -97,8 +86,8 @@ button {
 }
 
 .form-check-input:checked {
-  background-color: #a73dce !important;
-  border: #a73dc6 !important;
+  background-color: grey;
+  border: grey;
 }
 
 .form {
@@ -183,10 +172,22 @@ button {
   position: relative;
 }
 
+#enter-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: Inknut Antiqua, serif;
+}
+
 #form-data {
   color: white;
   font-size: 25px;
-  font-family: "Inknut Antiqua", serif;
   text-align: center;
   margin-top: 10%;
 }
@@ -236,24 +237,39 @@ button {
 /* Pedro E. Requesito 7 */
 #trybewarts-forms-logo {
   height: 500px;
-  -webkit-animation: mover 2s infinite alternate;
   animation: mover 2s infinite alternate;
 }
 
-/* Referência: https://stackoverflow.com/questions/27123399/how-to-move-an-image-up-and-down-smoothly-with-css */
-@-webkit-keyframes mover {
+#submit-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: Inknut Antiqua, serif;
+}
+
+@keyframes mover {
+
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-20px);
   }
 }
 
 @keyframes mover {
+
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-20px);
   }
