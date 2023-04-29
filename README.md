@@ -17,7 +17,7 @@ JavaScript
 
 ## Equipe
 - Pedro Buerger
-- Ramon
+- Ramon Silva
 
 ## Instalação
 Para instalar e executar o projeto em sua máquina, siga as instruções abaixo:
