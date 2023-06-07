@@ -2,13 +2,7 @@
 TrybeWarts é um projeto desenvolvido como desafio final do módulo de Front-End do curso de desenvolvimento web da Trybe. Ele consiste em uma aplicação web que permite ao usuário se cadastrar na escola de hogwarts, podendo escolher quais aprendizados desejam aprender.
 
 ## Funcionalidades
-Autenticação de usuário
-Listagem de produtos disponíveis para compra
-Adição e remoção de produtos do carrinho de compras
-Realização de compra com validação de estoque
-Contratação de serviços médicos e de cura
-Histórico de compras e serviços contratados
-Página de perfil do usuário com informações pessoais e de pagamento
+criar um formulario de cadastro para a escola de hogwarts.
 
 ## Tecnologias utilizadas
 HTML 
